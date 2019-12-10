@@ -1,0 +1,98 @@
+body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    background-color: whitesmoke;
+    background-image: url("Naamloos-1.jpg");
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover, a:focus {
+    color: darkgray;
+}
+
+
+.button {
+    color: white;
+    background-color: darkgray;
+    border: 1px solid slategray;
+    border-radius: 0.5em;
+    padding: 0.25em;
+    box-shadow: 0.125em 0.125em 0.25em gray;
+}
+
+.button:hover, .button:focus {
+    color: whitesmoke;
+    box-shadow: 0.15em 0.15em 0.25em gray;
+    
+}
+
+.credits {
+    display: none;
+}
+
+.headshot {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto auto;
+}
+
+.navbar {
+    box-shadow: 0.15em 0 0.25em gray;
+    font-size: 1.25em;
+    padding: 0.6em 2em;
+    background-color: white;
+}
+
+.nav-button {
+    margin: 0 0.25em;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "picture content timeline";
+}
+
+.img-region {
+    grid-area: picture;
+    text-align: center;
+    display: grid;
+}
+
+.content-section {
+    grid-area: content;
+}
+
+.twitter-timeline {
+    grid-area: timeline;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+.greeting {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.section-title {
+    margin-top: 0;
+}
+
+.social-media-logo {
+    margin: 0.2em;
+    max-height: 2em;
+    max-width: 2em;
+}

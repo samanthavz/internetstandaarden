@@ -17,30 +17,32 @@ a:hover, a:focus {
     color: darkgray;
 }
 
-
-.button {
-    color: white;
-    background-color: darkgray;
-    border: 1px solid slategray;
-    border-radius: 0.5em;
-    padding: 0.25em;
-    box-shadow: 0.125em 0.125em 0.25em gray;
+.myname {
+    font-family: 'Dancing Script', cursive;
+    padding: 0;
+    margin: 0 38em 0 0;
+    font-size: 1.02em;
 }
 
-.button:hover, .button:focus {
-    color: whitesmoke;
+
+.project-button {
+    color: black;
+    background-color: white;
+    border: 1px solid slategray;
+    padding: 0.25em;
+    box-shadow: 0.125em 0.125em 0.25em gray;
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+
+.project-button:hover, .project-button:focus {
+    color: black;
     box-shadow: 0.15em 0.15em 0.25em gray;
-    
+    background-color: whitesmoke;
 }
 
 .credits {
     display: none;
-}
-
-.headshot {
-    max-height: 100%;
-    max-width: 100%;
-    margin: auto auto;
 }
 
 .navbar {
@@ -48,31 +50,65 @@ a:hover, a:focus {
     font-size: 1.25em;
     padding: 0.6em 2em;
     background-color: white;
+    display: flex;
+    max-width: 100%;
 }
 
 .nav-button {
-    margin: 0 0.25em;
+    margin: 0.3em 0.3em 0 0.3em;
+    font-size: 0.8em;
 }
 
+.nav-button-home {
+    margin: 0.3em 0.3em 0 0.3em;
+    font-size: 0.8em;
+    border-bottom: 1px solid gray;
+}
+
+.nav-button-about {
+    margin: 0.3em 0.3em 0 0.3em;
+    font-size: 0.8em;
+    border-bottom: 1px solid gray;
+}
+
+.nav-button-projects {
+    margin: 0.3em 0.3em 0 0.3em;
+    font-size: 0.8em;
+    border-bottom: 1px solid gray;
+}
+
+.nav-button:hover, .nav-button-home:hover, .nav-button-about:hover, .nav-button-projects:hover {
+    border-bottom: 1px solid gainsboro;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
 .content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "picture content timeline";
+    display: flex;
+}
+
+.headshot {
+    max-height: 100%;
+    max-width: 100%;
+    transform: scaleX(-1);
 }
 
 .img-region {
-    grid-area: picture;
-    text-align: center;
-    display: grid;
+    margin: 5em 0em 0em 9em;
+    max-width: 20%;
+    max-height: 20%;
 }
 
 .content-section {
-    grid-area: content;
+    margin: 5em 7em 0em 6em;
+    max-width: 50%;
+    
+    
 }
 
 .twitter-timeline {
-    grid-area: timeline;
+    
 }
 
 .footer {
@@ -96,3 +132,115 @@ a:hover, a:focus {
     max-height: 2em;
     max-width: 2em;
 }
+
+.skill-list li {
+    list-style-type: none;
+}
+
+.skill-balk1 {
+    display: flex;
+    background-color: white;
+    margin: 0.3em 2em 0.3em 0.3em;
+    padding: 0.25em;
+}
+
+.procent1 {
+    padding: 0;
+    margin: 0 0 0 11.8em;
+}
+
+.skill-balk2 {
+    display: flex;
+    background-color: white;
+    margin: 0.3em 8em 0.3em 0.3em;
+    padding: 0.25em;
+}
+
+.procent2 {
+    padding: 0;
+    margin: 0 0 0 5em;
+}
+
+.skill-balk3 {
+    display: flex;
+    background-color: white;
+    margin: 0.3em 3.7em 0.3em 0.3em;
+    padding: 0.25em;
+}
+
+.procent3 {
+    padding: 0;
+    margin: 0 0 0 10em;
+}
+
+.skill-balk4 {
+    display: flex;
+    background-color: white;
+    margin: 0.3em 1.2em 0.3em 0.3em;
+    padding: 0.25em;
+}
+
+.procent4 {
+    padding: 0;
+    margin: 0 0 0 10.5em;
+}
+
+.skill-balk5 {
+    display: flex;
+    background-color: white;
+    margin: 0.3em 4em 0.3em 0.3em;
+    padding: 0.25em;
+}
+
+.procent5 {
+    padding: 0;
+    margin: 0 0 0 9.7em;
+}
+
+.skill-balk6 {
+    display: flex;
+    background-color: white;
+    margin: 0.3em 3.5em 0.3em 0.3em;
+    padding: 0.25em;
+}
+
+.procent6 {
+    padding: 0;
+    margin: 0 0 0 6.8em;
+}
+
+.info-top h2 {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.info-top p {
+    padding: 1em 17em 0 17em;
+}
+
+.info-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-title {
+    margin-left: 2.85em;
+}
+
+.facts-title {
+    margin-left: 2.3em;
+    
+}
+
+.cv-link {
+    color: black;
+    margin: 0 0 0 15em;
+    background-color: rgb(219,112,147,0.7);
+    padding: 1em;
+}
+
+.cv-link:hover, .cv-link:active {
+    background-color: rgb(219,112,147,0.9);
+    color: black;
+}
+

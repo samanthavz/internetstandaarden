@@ -11,6 +11,7 @@ body {
 a {
     text-decoration: none;
     color: gray;
+    user-select: none;
 }
 
 a:hover, a:focus {
@@ -20,8 +21,9 @@ a:hover, a:focus {
 .myname {
     font-family: 'Dancing Script', cursive;
     padding: 0;
-    margin: 0 38em 0 0;
+    margin: 0 36em 0 0;
     font-size: 1.02em;
+    min-width: 10em;
 }
 
 
@@ -52,6 +54,7 @@ a:hover, a:focus {
     background-color: white;
     display: flex;
     max-width: 100%;
+    user-select: none;
 }
 
 .nav-button {
@@ -59,22 +62,10 @@ a:hover, a:focus {
     font-size: 0.8em;
 }
 
-.nav-button-home {
+.nav-button2 {
+    border-bottom: 1px solid gray;
     margin: 0.3em 0.3em 0 0.3em;
     font-size: 0.8em;
-    border-bottom: 1px solid gray;
-}
-
-.nav-button-about {
-    margin: 0.3em 0.3em 0 0.3em;
-    font-size: 0.8em;
-    border-bottom: 1px solid gray;
-}
-
-.nav-button-projects {
-    margin: 0.3em 0.3em 0 0.3em;
-    font-size: 0.8em;
-    border-bottom: 1px solid gray;
 }
 
 .nav-button:hover, .nav-button-home:hover, .nav-button-about:hover, .nav-button-projects:hover {
@@ -116,6 +107,7 @@ a:hover, a:focus {
     bottom: 0;
     text-align: center;
     width: 100vw;
+    user-select: none;
 }
 
 .greeting {
@@ -131,6 +123,12 @@ a:hover, a:focus {
     margin: 0.2em;
     max-height: 2em;
     max-width: 2em;
+}
+
+/* begin about.html */
+
+.skill-list {
+    user-select: none;
 }
 
 .skill-list li {
@@ -242,5 +240,17 @@ a:hover, a:focus {
 .cv-link:hover, .cv-link:active {
     background-color: rgb(219,112,147,0.9);
     color: black;
+}
+
+/*start projects.html */
+
+.project-section a img {
+    height: 4em;
+    width: 6em;
+}
+
+.art-section a img {
+    height:5em;
+    width:5em;
 }
 

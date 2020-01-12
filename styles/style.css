@@ -10,13 +10,9 @@ body {
 
 a {
     text-decoration: none;
-    color: gray;
     user-select: none;
 }
 
-a:hover, a:focus {
-    color: darkgray;
-}
 
 .myname {
     font-family: 'Dancing Script', cursive;
@@ -35,12 +31,14 @@ a:hover, a:focus {
     box-shadow: 0.125em 0.125em 0.25em gray;
     font-size: 0.8em;
     padding: 0.5em;
+    border-style: none;
 }
 
 .project-button:hover, .project-button:focus {
     color: black;
     box-shadow: 0.15em 0.15em 0.25em gray;
     background-color: whitesmoke;
+    color: dimgray;
 }
 
 .credits {
@@ -60,18 +58,24 @@ a:hover, a:focus {
 .nav-button {
     margin: 0.3em 0.3em 0 0.3em;
     font-size: 0.8em;
+    color: gray;
 }
 
 .nav-button2 {
     border-bottom: 1px solid gray;
     margin: 0.3em 0.3em 0 0.3em;
     font-size: 0.8em;
+    color: gray;
 }
 
-.nav-button:hover, .nav-button-home:hover, .nav-button-about:hover, .nav-button-projects:hover {
+.nav-button2:hover, .nav-button2:focus {
+    color: darkgray;
+    border-bottom-color: gainsboro;
+}
+
+.nav-button:hover, .nav-button:focus {
+    color: darkgray;
     border-bottom: 1px solid gainsboro;
-    margin-bottom: 0;
-    padding-bottom: 0;
 }
 
 
@@ -94,8 +98,6 @@ a:hover, a:focus {
 .content-section {
     margin: 5em 7em 0em 6em;
     max-width: 50%;
-    
-    
 }
 
 .twitter-timeline {
@@ -239,10 +241,9 @@ a:hover, a:focus {
 
 .cv-link:hover, .cv-link:active {
     background-color: rgb(219,112,147,0.9);
-    color: black;
 }
 
-/*start projects.html */
+/* start projects.html */
 
 .project-section a img {
     height: 4em;
@@ -250,7 +251,66 @@ a:hover, a:focus {
 }
 
 .art-section a img {
-    height:5em;
-    width:5em;
+    height: 5em;
+    width: 5em;
 }
 
+/* start contact.html */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    width: 35.5em;
+    height: 25em;
+}
+
+.form div {
+    border-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.form div input{
+    border-style: none;
+    outline: none;
+    margin: 1em;
+    min-width: 20em;
+    min-height: 2em;
+    font-size: 0.8em;  
+}
+
+::placeholder {
+    color: gainsboro;
+}
+
+.message {
+    border-style: none;
+    margin: 1em;
+    font-size: 0.8em;
+    width: 42.15em;
+    height: 14em;
+    margin: 1em;
+    text-align: top;
+    outline: none;
+    resize: none;
+}
+
+.file {
+    outline: none;
+    margin: 1em;
+}
+
+.submit {
+    outline: none;
+    width: 8em;
+    border-radius: none;
+    border: none;
+    margin: 5em auto 0 auto;
+    background-color: rgb(219,112,147,0.7);
+    padding: 1em 2em 1em 2em;
+}
+
+.submit:hover, submit:active {
+    background-color: rgb(219,112,147,0.9);
+}

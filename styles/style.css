@@ -5,7 +5,9 @@ body {
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     background-color: whitesmoke;
-    background-image: url("/images/Naamloos-1.jpg");
+    background-image: url("../images/Naamloos-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -17,9 +19,15 @@ a {
 .myname {
     font-family: 'Dancing Script', cursive;
     padding: 0;
-    margin: 0 36em 0 0;
     font-size: 1.02em;
     min-width: 10em;
+    margin: 0;
+}
+
+.navbar div {
+    position: absolute;
+    right: 0;
+    margin-right: 2em;
 }
 
 
@@ -233,10 +241,15 @@ a {
 }
 
 .cv-link {
-    color: black;
-    margin: 0 0 0 15em;
+    text-align: center;
+    margin: 2.3em;
     background-color: rgb(219,112,147,0.7);
     padding: 1em;
+    max-width: 12em;
+}
+
+.cv-link a {
+    color: black;
 }
 
 .cv-link:hover, .cv-link:active {
@@ -306,11 +319,25 @@ a {
     width: 8em;
     border-radius: none;
     border: none;
-    margin: 5em auto 0 auto;
+    margin: 1.5em auto 0 auto;
     background-color: rgb(219,112,147,0.7);
-    padding: 1em 2em 1em 2em;
+    padding: 0.8em 2em 0.8em 2em;
+    font-size: 0.8em;
+
 }
 
 .submit:hover, submit:active {
     background-color: rgb(219,112,147,0.9);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.contact p {
+    max-width: 70vw;
+    margin: auto;
+    margin-bottom: 1.5em;
+    text-align: center;
 }

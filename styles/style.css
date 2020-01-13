@@ -10,6 +10,15 @@ body {
     background-size: cover;
 }
 
+main {
+    animation: fade 0.5s ease-in;
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 a {
     text-decoration: none;
     user-select: none;
@@ -40,6 +49,7 @@ a {
     font-size: 0.8em;
     padding: 0.5em;
     border-style: none;
+    cursor: pointer;
 }
 
 .project-button:hover, .project-button:focus {
@@ -98,13 +108,13 @@ a {
 }
 
 .img-region {
-    margin: 5em 0em 0em 9em;
-    max-width: 20%;
+    margin: 7em 0em 0em 4em;
+    max-width: 25%;
     max-height: 20%;
 }
 
 .content-section {
-    margin: 5em 7em 0em 6em;
+    margin: 7em 7em 0em 6em;
     max-width: 50%;
 }
 
@@ -246,6 +256,7 @@ a {
     background-color: rgb(219,112,147,0.7);
     padding: 1em;
     max-width: 12em;
+    cursor: pointer;
 }
 
 .cv-link a {
@@ -258,14 +269,103 @@ a {
 
 /* start projects.html */
 
+.projects-body {
+    background-attachment: fixed;
+}
+
+.nav-projects {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.nav-projects a {
+    color: gray;
+    margin: 1em;
+}
+
+.nav-projects1 {
+    border-bottom: solid 0.05em gray;
+}
+
+.nav-projects a:hover, .nav-projects a:active {
+    color: darkgray;
+    border-bottom: solid 0.05em darkgray;
+}
+
+.project-section {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
 .project-section a img {
-    height: 4em;
-    width: 6em;
+    height: 8em;
+    width: 12em;
+    margin: 1em 1em 1em 2em;
 }
 
 .art-section a img {
-    height: 5em;
-    width: 5em;
+    height: 18em;
+    width: 18em;
+}
+
+.project-section div {
+    background-color: rgba(255,255,255,0.7);
+    max-width: 16em;
+    margin: 2em 2em 0 2em;
+    padding: 1em 1em 0 1em;
+    display: grid;
+    grid-template-areas: 
+        "img"
+        "description" 
+        "link-zin"
+        ;
+}
+
+.pp1 {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.pp2 {
+    font-size: 0.5em;
+}
+
+.footer2 {
+    position: relative;
+    text-align: center;
+}
+
+.github {
+    text-align: center;
+    margin: 5em auto 7em auto;
+    cursor: pointer;
+}
+
+.github a {
+    color: black;
+    width: 25em;
+    height: 2em;
+    background-color: rgba(255,255,255,0.7);
+    padding: 1em 2em 1em 2em;
+    font-size: 0.9em;
+}
+
+.github a:hover, .github a:active {
+    background-color: white;
+}
+
+.art-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.art-section a {
+    margin: 1em;
 }
 
 /* start contact.html */
@@ -301,10 +401,9 @@ a {
     border-style: none;
     margin: 1em;
     font-size: 0.8em;
-    width: 42.15em;
+    width: 94.5%;
     height: 14em;
     margin: 1em;
-    text-align: top;
     outline: none;
     resize: none;
 }
@@ -312,6 +411,7 @@ a {
 .file {
     outline: none;
     margin: 1em;
+    cursor: pointer;
 }
 
 .submit {
@@ -320,14 +420,15 @@ a {
     border-radius: none;
     border: none;
     margin: 1.5em auto 0 auto;
-    background-color: rgb(219,112,147,0.7);
+    background-color: rgb(219,112,147,0.8);
     padding: 0.8em 2em 0.8em 2em;
     font-size: 0.8em;
+    cursor: pointer;
 
 }
 
 .submit:hover, submit:active {
-    background-color: rgb(219,112,147,0.9);
+    background-color: rgb(219,112,147,1);
 }
 
 .contact h2 {

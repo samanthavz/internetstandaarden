@@ -155,6 +155,10 @@ a {
     list-style-type: none;
 }
 
+.p1 {
+    margin: 0;
+}
+
 .skill-balk1 {
     display: flex;
     background-color: white;
@@ -417,7 +421,6 @@ a {
 .submit {
     outline: none;
     width: 8em;
-    border-radius: none;
     border: none;
     margin: 1.5em auto 0 auto;
     background-color: rgb(219,112,147,0.8);
